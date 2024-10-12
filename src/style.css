@@ -5,12 +5,12 @@
 
 @font-face {
   font-family: "mahaveeram1";
-  src: url("/Fonts/Blockletter.otf") format("truetype");
+  src: url("/Fonts/Blockletter.otf") format("opentype");
 }
 
 @font-face {
   font-family: "mahaveeram2";
-  src: url("/Fonts/EVAGR5ANDE.otf") format("truetype");
+  src: url("/Fonts/EVAGR5ANDE.otf") format("opentype");
 }
 
 @font-face {
