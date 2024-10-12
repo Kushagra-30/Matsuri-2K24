@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matsuri</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body class="h-screen w-screen text-white font-bodyfont overflow-hidden">
+    <video
+      autoplay
+      loop
+      muted
+      plays-inline
+      id="bgvideo"
+      class="absolute h-screen w-screen top-0 left-0 -z-[9] -rotate-90 lg:scale-[2] scale-[3]"
+    >
+      <source src="./Images/aesthetic.mp4" type="video/mp4" />
+    </video>
+    <nav class="h-16 w-full text-white lg:h-[7vh] relative grid place">
+      <span
+        id="menuopen"
+        class="text-[22px] ml-5 absolute pt-5 z-30 md:text-[36px] lg:hidden"
+      >
+        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+      </span>
+      <h1
+        class="text-center text-[26px] pt-4 font-mahaveeram1 md:text-[25px] lg:text-[32px] lg:py-7"
+      >
+        MAHAVEERAM-2K24
+      </h1>
+      <div
+        id="sidenav"
+        class="absolute top-0 left-0 transform -translate-y-full opacity-0 w-full h-screen bg-purple-200 text-black flex flex-col justify-center items-center gap-14 transition-all duration-500 ease-in-out lg:relative lg:transform-none lg:opacity-100 lg:flex-row lg:h-7 lg:bg-transparent lg:text-white lg:py-0 lg:gap-10 lg:px-16 lg:flex lg:items-start lg:justify-start lg:-ml-6 lg:-mt-16 xl:gap-20 xl:px-16 xl:flex xl:items-start xl:justify-start xl:left-0 xl:-mt-16 z-20"
+      >
+        <a href="./events.html" class="text-[22px] lg:text-[20px]">Events</a>
+        <a href="./aboutus.html" class="text-[22px] lg:text-[20px]">About Us</a>
+        <a href="./contact.html" class="text-[22px] lg:text-[20px]">Contact</a>
+      </div>
+    </nav>
+
+    <div
+      class="h-[calc(100%-12rem)] w-full flex flex-col justify-center items-center xl:h-[calc(100%-5rem)]"
+    >
+      <h1
+        class="h-28 w-full text-center text-[10vh] font-matsuri md:text-[13vh] lg:text-[14vh] xl:h-48 xl:text-[15vh]"
+      >
+        Matsuri
+      </h1>
+      <p
+        class="text-center w-[365px] h-fit md:mt-20 md:text-[20px] md:w-[760px] lg:mt-32 lg:text-[28px] lg:w-[900px] xl:w-[1000px] xl:mt-0 xl:text-[24px]"
+      >
+        Join us for an exciting journey through the worlds of IT and Science.
+        Whether you are into Tech or fascinated by Science this Fest has it all
+      </p>
+      <a
+        href=""
+        class="relative items-center justify-start inline-block px-5 py-3 overflow-hidden font-bold rounded-full group mt-5"
+      >
+        <span
+          class="w-44 h-44 lg:h-80 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-white opacity-[3%]"
+        ></span>
+        <span
+          class="absolute top-0 left-0 w-56 h-56 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-36 bg-white opacity-100 group-hover:-translate-x-8"
+        ></span>
+        <span
+          class="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-gray-900"
+          >Register</span
+        >
+        <span
+          class="absolute inset-0 border-2 border-purple-300 rounded-full"
+        ></span>
+      </a>
+    </div>
+
+    <!-- Social Media Icons Section -->
+    <div
+      class="w-full flex justify-center lg:justify-end items-center gap-6 mt-10 lg:-mt-10 lg:-ml-10 lg:gap-10"
+    >
+      <a
+        href=""
+        target="_blank"
+        class="text-2xl lg:text-2xl hover:text-green-400"
+      >
+        <ion-icon name="logo-whatsapp"></ion-icon>
+      </a>
+      <a
+        href=""
+        target="_blank"
+        class="text-2xl lg:text-2xl hover:text-red-400"
+      >
+        <ion-icon name="logo-youtube"></ion-icon>
+      </a>
+      <a
+        href=""
+        target="_blank"
+        class="text-2xl lg:text-2xl hover:text-blue-400"
+      >
+        <ion-icon name="location-outline"></ion-icon>
+      </a>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      function Menu(e) {
+        let sidenav = document.querySelector("#sidenav");
+
+        // Toggle translate and opacity classes
+        sidenav.classList.toggle("translate-y-0");
+        sidenav.classList.toggle("opacity-0");
+
+        // Change icon between 'menu' and 'close'
+        e.name = e.name === "menu" ? "close" : "menu";
+      }
+    </script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
