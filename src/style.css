@@ -1,22 +1,23 @@
 @font-face {
   font-family: "matsuri";
-  src: url("./Fonts/go3v2.ttf") format("truetype");
+  src: url("/Fonts/go3v2.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "mahaveeram1";
-  src: url("./Fonts/Blockletter.otf") format("truetype");
+  src: url("/Fonts/Blockletter.otf") format("opentype");
 }
 
 @font-face {
   font-family: "mahaveeram2";
-  src: url("./Fonts/EVAGR5ANDE.otf") format("truetype");
+  src: url("/Fonts/EVAGR5ANDE.otf") format("opentype");
 }
 
 @font-face {
   font-family: "bodyfont";
-  src: url("./Fonts/neo-latina-demo-FFP.ttf") format("truetype");
+  src: url("/Fonts/neo-latina-demo-FFP.ttf") format("truetype");
 }
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
