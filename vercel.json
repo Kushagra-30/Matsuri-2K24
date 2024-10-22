@@ -5,7 +5,7 @@
             "destination":"/"
         },
         {
-            "source":"/events",
+            "source":"/events.html",
             "destination":"/"
         }
     ]
