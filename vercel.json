@@ -1,5 +1,12 @@
 {
-  "routes": [
-    { "src": "/(.*)", "dest": "/events.html" }
-  ]
+    "routes":[
+        {
+            "src":"/",
+            "dest":"/"
+        },
+        {
+            "src":"/events.html",
+            "dest":"/"
+        }
+    ]
 }
