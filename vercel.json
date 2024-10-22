@@ -1,12 +1,12 @@
 {
-    "redirects":[
+    "routes":[
         {
-            "source":"/",
-            "destination":"/"
+            "src":"/",
+            "dest":"/"
         },
         {
-            "source":"/events.html",
-            "destination":"/"
+            "src":"/events.html",
+            "dest":"/"
         }
     ]
 }
