@@ -10,3 +10,8 @@
         }
     ]
 }
+{
+  "rewrites": [
+    { "source": "/events", "destination": "/event.html" }
+  ]
+}
