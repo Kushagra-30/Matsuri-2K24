@@ -1,12 +1,8 @@
 {
-    "routes":[
-        {
-            "src":"/",
-            "dest":"/"
-        },
-        {
-            "src":"/events",
-            "dest":"/events.html"
-        }
-    ]
+  "rewrites": [
+    {
+      "source": "/events",
+      "destination": "/events.html"
+    }
+  ]
 }
