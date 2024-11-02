@@ -2,8 +2,7 @@
   "rewrites": [
     {
       "source": "/events",
-      "destination": "/events.html",
-      "permanent": true
+      "destination": "/events.html"
     }
   ]
 }
