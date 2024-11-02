@@ -5,9 +5,5 @@
       "destination": "/events.html",
       "permanent": true
     }
-  ],
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/$1" }
   ]
 }
